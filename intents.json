@@ -1,0 +1,294 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Greetings"
+      ],
+      "responses": [
+        "Hello! Welcome to the Quiz App. How can I assist you today?",
+        "Hi there! How can I help you with the Quiz?",
+        "Good day! How can I assist you?",
+        "Welcome to the quiz application, I am here to assist you on your placement preparation journey"
+      ]
+    },
+    {
+      "tag": "topic_selection",
+      "patterns": [
+        "I want to start a quiz",
+        "Can I take a quiz?",
+        "Start quiz"
+      ],
+      "responses": [
+        "Great! Let's start the quiz based training. I'll ask you a question, and you can provide the answer. If you're feeling stuck, enter 'hint' to get some help! Enter 'okay' to continue."
+      ]
+    },
+    {
+      "tag": "question_answer",
+      "patterns": [
+        "{user_answer}"
+      ],
+      "responses": [
+        "{explanation}"
+      ]
+    },
+    {
+      "tag": "proficient",
+      "patterns": [],
+      "responses": [
+        "Great job! You are proficient in {topic}.",
+        "Well done! You have mastered the {topic} quiz."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Okay"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Glad to help!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "I'm done",
+        "Goodbye",
+        "Bye",
+        "See you later"
+      ],
+      "responses": [
+        "Thank you for using the Quiz App. Have a great day!",
+        "Goodbye! If you have more questions, feel free to ask. Have a nice day!"
+      ]
+    },
+    {
+      "tag": "continuation",
+      "patterns": ["Let's talk","Let's have a conversation","Let's chat"],
+      "responses": ["Okay, let's have a conversation. Also, tell me to 'start quiz' to continue where you left off"]
+    },
+    {
+      "tag": "expressing_gratitude",
+      "patterns": ["Thank you for your help", "Thanks", "Appreciate it"],
+      "responses": ["You're welcome!", "No problem!"]
+    },
+    {
+      "tag": "asking_for_help",
+      "patterns": ["Can you help me?", "I need assistance", "Help, please"],
+      "responses": ["Of course! How can I assist you?", "I'm here to help. What do you need assistance with?"]
+    },
+    {
+      "tag": "providing_information",
+      "patterns": ["Tell me about yourself", "Explain yourself to me", "What do you do?"],
+      "responses": ["Certainly! I am a chatbot developed and trained to aid you on your placement preparation journey. Enter 'start quiz' if you are ready!"]
+    },
+    {
+      "tag": "asking_questions",
+      "patterns": ["I have a question", "Can I ask you something?"],
+      "responses": ["Of course, feel free to ask me to start a quiz by entering 'start quiz'."]
+    },
+    {
+      "tag": "expressing_happiness",
+      "patterns": ["I'm happy","I'm over the moon"],
+      "responses": ["It's great to hear that you're happy! Enter 'start quiz' to channel that happiness into our session today!"]
+    },
+    {
+      "tag": "expressing_excitement",
+      "patterns": ["I'm excited"],
+      "responses": ["Excitement is contagious! Let's channel that into starting a quiz by entering 'start quiz'!"]
+    },
+    {
+      "tag": "expressing_sadness",
+      "patterns": ["I'm sad"],
+      "responses": ["I'm sorry to hear you're sad. How about I try to take your minds off things, enter 'start quiz' to start our session."]
+    },
+    {
+      "tag": "expressing_boredom",
+      "patterns": ["I'm bored"],
+      "responses": ["Feeling bored? How about entering 'start quiz' to start some learning?"]
+    },
+    {
+      "tag": "making_requests",
+      "patterns": ["Can you do something for me?", "Please do this for me", "I need a favor"],
+      "responses": ["Sure, I'd be happy to help. What do you need?", "Of course, I'm here to assist. What's your request?"]
+    },
+    {
+      "tag": "giving_compliments",
+      "patterns": ["You're great", "You're amazing", "You're awesome"],
+      "responses": ["Thank you for the compliment! Can I assist you further by starting a quiz?"]
+    },
+    {
+      "tag": "asking_opinions",
+      "patterns": ["What's your opinion?", "What do you think?", "Do you have any opinions?"],
+      "responses": ["I'm just a chatbot, so I don't have personal opinions, but I can provide a learning experience, just enter 'start quiz'."]
+    },
+    {
+      "tag": "discussing_weather",
+      "patterns": ["How's the weather today?", "Tell me about the weather", "Is it going to rain?"],
+      "responses": ["I cannot provide you with the current weather as I do have access to your location. Enter 'start quiz' to start the learning."]
+    },
+    {
+      "tag": "talking_about_movies",
+      "patterns": ["I love movies", "Tell me about a good movie", "What's do you think of movies", "What's your thoughts on movies?"],
+      "responses": ["Movies are a great source of entertainment, I hope that our sessions can be just as entertaining. Enter 'start quiz' to find out!", "I love movies a lot, but I love teaching students even more! Enter 'start quiz' to start our session together"]
+    },
+    {
+      "tag": "talking_about_books",
+      "patterns": ["I enjoy reading books", "Recommend a good book", "What's your favorite book?"],
+      "responses": ["Reading is a fantastic habit. How about we do some learning too? Just enter 'start quiz' to begin :)", "I don't have favorite books, but I can suggest that we start a quiz so we can have a fun learning session! Just enter 'start quiz'."]
+    },
+    {
+      "tag": "quiz_instructions",
+      "patterns": ["How does the quiz work?", "Explain the quiz to me"],
+      "responses": ["The quiz is simple. I'll ask you questions, and you'll answer them. Let's start now! Just enter 'start quiz'."]
+    },
+    {
+      "tag": "idle",
+      "patterns": ["...", "I'm here", "What's next?"],
+      "responses": ["It's time to kick off another quiz. Just enter 'start quiz' to begin."]
+    },
+    {
+      "tag": "delayed_response",
+      "patterns": ["Why the delay?", "Taking too long", "What's happening?"],
+      "responses": ["Apologies for the delay. Let's not waste any more time. Just enter 'start quiz' to begin."]
+    },
+    {
+      "tag": "blank_space",
+      "patterns": ["What's with the blank space?", "No question?", "Where's the question?"],
+      "responses": ["My apologies. Let's start the quiz. Enter 'start quiz' to prompt me to begin."]
+    },
+    {
+      "tag": "introduction",
+      "patterns": ["Introduce yourself", "Who are you?"],
+      "responses": ["I am a chatbot designed to assist with your placement preparation. Let's get started with a quiz by entering 'start quiz' below!"]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What's the time?", "Tell me the time"],
+      "responses": ["I'm sorry, I cannot provide the current time. However, we can start a quiz. Just enter 'start quiz'."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Share a joke"],
+      "responses": ["Why don't scientists trust atoms? Because they make up everything! Now that I've hopefully got a laught out of you, enter 'start quiz' below to start some learning."]
+    },
+    {
+      "tag": "music",
+      "patterns": ["I like music", "Recommend some music"],
+      "responses": ["Music is a great way to relax. How about starting a quiz to learn something new? Just enter 'start quiz' below."]
+    },
+    {
+      "tag": "food",
+      "patterns": ["I'm hungry", "Recommend a dish"],
+      "responses": ["I can't cook, but I can help you prepare for your placement. Let's start a quiz! Just enter 'start quiz' below :)"]
+    },
+    {
+      "tag": "travel",
+      "patterns": ["I love traveling", "Suggest a travel destination"],
+      "responses": ["Traveling is wonderful, but for now, let's explore the world of quizzes! Just enter 'start quiz' to begin :)"]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["I enjoy sports", "What's your favorite sport?"],
+      "responses": ["Sports are a great way to stay active. Let's keep your mind active with a quiz! Enter 'start quiz' to begin!"]
+    },
+    {
+      "tag": "technology",
+      "patterns": ["I'm interested in technology", "Recommend a tech gadget"],
+      "responses": ["Technology is fascinating! Let's dive into the world of tech in our quiz."]
+    },
+    {
+      "tag": "pets",
+      "patterns": ["I have a pet", "Tell me about pets"],
+      "responses": ["Pets are lovely companions. Let's have a quiz session to keep our minds sharp!"]
+    },
+    {
+      "tag": "compliment",
+      "patterns": ["You're doing a great job", "Nice work"],
+      "responses": ["Thank you! I'm here to help you succeed in your placement preparation."]
+    },
+    {
+      "tag": "weather_today",
+      "patterns": ["What's the weather like today?", "Tell me the weather forecast"],
+      "responses": ["I'm sorry, I don't have access to real-time weather information."]
+    },
+    {
+      "tag": "nature",
+      "patterns": ["I love nature", "Tell me about nature"],
+      "responses": ["Nature is beautiful. Let's explore the world of knowledge through a quiz."]
+    },
+    {
+      "tag": "science",
+      "patterns": ["I'm interested in science", "Tell me a science fact"],
+      "responses": ["Science is fascinating! Let's embark on a journey of learning with a quiz."]
+    },
+    {
+      "tag": "history",
+      "patterns": ["I enjoy history", "Tell me a historical fact"],
+      "responses": ["History is rich with stories. Let's uncover more knowledge through a quiz."]
+    },
+    {
+      "tag": "art",
+      "patterns": ["I'm into art", "Tell me about famous artists"],
+      "responses": ["Art is a wonderful form of expression. Let's express our knowledge through a quiz!"]
+    },
+    {
+      "tag": "movies",
+      "patterns": ["I love movies", "Recommend a good movie"],
+      "responses": ["Movies are a great source of entertainment. Let's focus on learning with a quiz."]
+    },
+    {
+      "tag": "books",
+      "patterns": ["I enjoy reading books", "Recommend a good book"],
+      "responses": ["Reading is a fantastic habit. Let's cultivate your knowledge with a quiz!"]
+    },
+    {
+      "tag": "programming",
+      "patterns": ["I'm interested in programming", "Tell me a coding fact"],
+      "responses": ["Programming is a valuable skill. Let's code your way through a quiz."]
+    },
+    {
+      "tag": "languages",
+      "patterns": ["I like learning languages", "Recommend a language to learn"],
+      "responses": ["Learning languages is impressive. Let's start a quiz to enrich your knowledge!"]
+    },
+    {
+      "tag": "math",
+      "patterns": ["I enjoy math", "Tell me a math fact"],
+      "responses": ["Mathematics is the foundation of many subjects. Let's strengthen your knowledge with a quiz!"]
+    },
+    {
+      "tag": "animals",
+      "patterns": ["I love animals", "Tell me about a fascinating animal"],
+      "responses": ["Animals are incredible. Let's explore more about them with a quiz."]
+    },
+    {
+      "tag": "health",
+      "patterns": ["I'm interested in health", "Tell me a health tip"],
+      "responses": ["Health is wealth. Let's enrich your knowledge wealth with a quiz."]
+    },
+    {
+      "tag": "space",
+      "patterns": ["I'm fascinated by space", "Tell me about a celestial body"],
+      "responses": ["Space is a vast frontier. Let's explore it through knowledge in a quiz."]
+    },
+    {
+      "tag": "fashion",
+      "patterns": ["I'm into fashion", "Tell me about a famous fashion designer"],
+      "responses": ["Fashion is an art. Let's design your knowledge in a quiz."]
+    },
+    {
+      "tag": "environment",
+      "patterns": ["I care about the environment", "Tell me an eco-friendly tip"],
+      "responses": ["Caring for the environment is noble. Let's nurture knowledge like nature in a quiz."]
+    }
+  ]
+}
